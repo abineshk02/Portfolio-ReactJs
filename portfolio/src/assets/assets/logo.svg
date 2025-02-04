@@ -7,7 +7,8 @@
     </linearGradient>
   </defs>
   
-  <text x="10" y="40" font-family="Arial, sans-serif" font-size="35" font-weight="bold" fill="url(#gradient)">
-    Abinesh
+  <text x="10" y="40" font-family="Lobster" font-size="35" font-weight="bold" fill="url(#gradient)">
+    AbinesH
   </text>
+      
 </svg>

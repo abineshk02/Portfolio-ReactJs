@@ -4,7 +4,7 @@ import coding from "../../assets/assets/coding.png";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about"className="about">
       <div className="about-title">
         <h1>About Me</h1>
         <img src={theme_pattern} alt="Theme Pattern" />
@@ -39,31 +39,6 @@ const About = () => {
           </p>
         </div>
       </div>
-      {/* <div className="about-skills">
-        <h2>Technical Skills</h2>
-          <div className="about-skill">
-            Programming Languages: Python, JavaScript, TypeScript
-          </div>
-          <div className="about-skill">
-            Web Technologies: HTML, CSS, React.js, Material UI
-          </div>
-          <div className="about-skill">
-            Backend Frameworks: Django, Django REST Framework
-          </div>
-          <div className="about-skill">Databases: PostgreSQL</div>
-          <div className="about-skill">
-            DevOps & Tools: Docker, Ansible Playbooks, Git, GitHub, CI/CD
-            Pipelines, JIT
-          </div>
-          <div className="about-skill">Web Servers: Nginx, ASGI</div>
-          <div className="about-skill">API Tools: Postman</div>
-          <div className="about-skill">Data Processing & Messaging: Kafka</div>
-          <div className="about-skill">Methodologies: Agile</div>
-          <div className="about-skill">Code Editor: VS Code</div>
-          <div className="about-skill">
-            Other Skills: UI development, responsive web design, cloning popular
-            web pages (e.g., Netflix), and personal portfolio creation
-          </div> */}
       <div className="about-skills">
         <div className="skill">
         <p>Programming Languages: Python, JavaScript</p>

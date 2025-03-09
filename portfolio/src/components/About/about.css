@@ -1,65 +1,102 @@
-.about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin: 80px 100px;
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 100px;
 }
 .about-right span {
-    font-weight: bold;
-    background: linear-gradient(45deg, #1E90FF, #FF1493);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* transition: transform 0.3s ease; */
-
+  font-weight: bold;
+  background: linear-gradient(45deg, #1e90ff, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* transition: transform 0.3s ease; */
 }
 /* .about-right span:hover{
   transform: scale(1.05);
 } */
-.about-title{
-    position: relative;
+.about-title {
+  position: relative;
 }
-.about-title h1{
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
+.about-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
 }
-.about-title img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+.about-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
-.about-section{
-    display: flex;
-    gap: 80px;
+.about-section {
+  display: flex;
+  gap: 80px;
 }
 .about-right {
-    max-width: 600px;
-    font-size: 18px;
-    text-align: left;
-    display: flex;
+  max-width: 600px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 1.8;
+}
+
+.about-right p {
+  margin-bottom: 15px;
+}
+
+.about-skills {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+@media (max-width: 1230px) {
+  .about{
+    gap:80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .about-title h1{
+    font-size: 50px;
+    padding:0;
+
+  }
+  .about-title img{
+    width: 130px;
+    right:-20px;
+  }
+  .about-section{
     flex-direction: column;
-    gap: 30px;
-    line-height: 1.8;
   }
-  
-  .about-right p {
-    margin-bottom: 15px;
+  .about-left{
+    display: none;
   }
-
-   .about-skills{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 80px;
+  .about-right{
     font-size: 18px;
-    line-height: 1.8;
-    
-  } 
+    line-height: 32px;
 
-  .skill:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
+
   }
+  .about-skills{
+    justify-content: space-between;
+  }
+  .skill{
+    gap: 10px;
+  }
+  .skill p{
+    text-align: center;
+    font-size: 16px;
+  }
+}

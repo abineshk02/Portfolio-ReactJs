@@ -128,7 +128,7 @@
   border-color: #FF1493;
   color: #FF1493; 
 }
-@media (max-width: 1230px) {
+@media (max-width: 763px) {
   .contact{
     gap: 50px;
     margin: 50px 70px;

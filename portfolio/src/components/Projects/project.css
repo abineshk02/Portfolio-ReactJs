@@ -1,0 +1,253 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.projects-title{
+    position: relative;
+}
+.projects-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.projects-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.projects-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    /* cursor: pointer; */
+}
+.projets-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.projects-format h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.projects-format h2{
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #1E90FF, #FF1493);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.projects-format p{
+    color: #d4d4d4;
+}
+.projects-readmore{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.projects-format:hover{
+    border: 2px solid #FF1493;
+    background-image: linear-gradient(45deg,#3f0028,#582308);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+/* Existing styles ... */
+
+.modal-overlay {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .modal-card {
+    border: 2px solid #FF1493;
+    background: #161616;
+    color: white;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .modal-card h2 {
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #1E90FF, #FF1493); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+  }
+  
+  .modal-card ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+  
+  .modal-card li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  .modal-card button {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .modal-card button:hover {
+    background: #333;
+  }
+  
+  
+  
+  @media (max-width: 1024px) {
+    .projects {
+      margin: 60px 80px;
+      gap: 60px;
+    }
+  
+    .projects-title h1 {
+      font-size: 60px;
+    }
+  
+    .projets-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  
+    .projects-format h2 {
+      font-size: 24px;
+    }
+  
+    .projects-format h3 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      margin: 40px 30px;
+      gap: 40px;
+    }
+  
+    .projects-title h1 {
+      font-size: 40px;
+      padding: 0px 10px;
+    }
+  
+    .projects-title img {
+      width: 80px;
+    }
+  
+    .projets-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .projects-format {
+      padding: 16px;
+    }
+  
+    .projects-format h2 {
+      font-size: 22px;
+    }
+  
+    .projects-format h3 {
+      font-size: 16px;
+    }
+  
+    .projects-format p {
+      font-size: 14px;
+    }
+  
+    .projects-readmore {
+      gap: 10px;
+      font-size: 14px;
+    }
+  
+    .modal-card {
+      max-width: 95%;
+      padding: 1.2rem;
+    }
+  
+    .modal-card h2 {
+      font-size: 1.5rem;
+    }
+  
+    .modal-card ul {
+      padding-left: 1.2rem;
+    }
+  
+    .modal-card li {
+      font-size: 14px;
+    }
+  
+    .modal-card button {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-title h1 {
+      font-size: 32px;
+    }
+  
+    .modal-card {
+      padding: 1rem;
+    }
+  
+    .modal-card h2 {
+      font-size: 1.2rem;
+    }
+  
+    .modal-card li {
+      font-size: 13px;
+    }
+  
+    .projects-format h2 {
+      font-size: 20px;
+    }
+  
+    .projects-format h3 {
+      font-size: 14px;
+    }
+  
+    .projects-format p {
+      font-size: 13px;
+    }
+  }
+  

@@ -66,7 +66,7 @@
   border-color:  #FF1493; 
   color: #FF1493;
 }
-@media (max-width: 1230px) {
+@media (max-width: 763px) {
   .hero img{
     margin-top: 120px;
     width: 260px;

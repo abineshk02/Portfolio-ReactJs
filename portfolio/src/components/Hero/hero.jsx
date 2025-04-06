@@ -5,17 +5,18 @@ import { Link as AnchorLink } from "react-scroll";
 
 const Hero = () => {
   const openResume = () => {
-    window.open("/Abinesh K .pdf", "_blank"); // Opens in a new tab
+    window.open(`${import.meta.env.BASE_URL}abinesh-resume.pdf`, "_blank");
   };
-
+  
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Abinesh K .pdf"; // Path to your resume in public folder
-    link.download = "Abinesh_Resume.pdf"; // Custom download filename
+    link.href = `${import.meta.env.BASE_URL}abinesh-resume.pdf`;
+    link.download = "abinesh-resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
+  
 
   return (
     <div id="home" className="hero">

@@ -250,4 +250,57 @@
       font-size: 13px;
     }
   }
+  @media (max-width: 360px) {
+    .projects {
+      margin: 30px 20px;
+      gap: 30px;
+    }
+  
+    .projects-title h1 {
+      font-size: 26px;
+      padding: 0 8px;
+    }
+  
+    .projects-title img {
+      width: 60px;
+    }
+  
+    .projects-format {
+      padding: 14px;
+    }
+  
+    .projects-format h2 {
+      font-size: 18px;
+    }
+  
+    .projects-format h3 {
+      font-size: 13px;
+    }
+  
+    .projects-format p,
+    .projects-readmore {
+      font-size: 12px;
+    }
+  
+    .projects-readmore {
+      gap: 8px;
+    }
+  
+    .modal-card {
+      padding: 0.8rem;
+    }
+  
+    .modal-card h2 {
+      font-size: 1rem;
+    }
+  
+    .modal-card li {
+      font-size: 12px;
+    }
+  
+    .modal-card button {
+      font-size: 14px;
+      padding: 0.5rem 1rem;
+    }
+  }
   

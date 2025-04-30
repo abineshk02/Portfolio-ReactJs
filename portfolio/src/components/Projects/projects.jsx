@@ -37,6 +37,46 @@ const Projects = () => {
           <div className="modal-card">
             <h2>{activeProject.p_name}</h2>
             <ul>
+              <ul>
+                {activeProject.p_details
+                  .trim()
+                  .split("●")
+                  .filter(Boolean)
+                  .map((point, idx) => {
+                    const trimmed = point.trim();
+                    const isLink = trimmed.toLowerCase().startsWith("link :");
+
+                    if (isLink) {
+                      const url = trimmed.split("Link :")[1].trim();
+                      return (
+                        <li key={idx}>
+                          🔗{" "}
+                          <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {url}
+                          </a>
+                        </li>
+                      );
+                    }
+
+                    return <li key={idx}>{trimmed}</li>;
+                  })}
+              </ul>
+            </ul>
+
+            <button onClick={() => setActiveProject(null)}>Close</button>
+          </div>
+        </div>
+      )}
+
+      {/* {activeProject && (
+        <div className="modal-overlay">
+          <div className="modal-card">
+            <h2>{activeProject.p_name}</h2>
+            <ul>
               {activeProject.p_details
                 .trim()
                 .split("●")
@@ -46,10 +86,20 @@ const Projects = () => {
                 ))}
             </ul>
 
+            {activeProject.p_link && (
+              <a
+                href={activeProject.p_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >link
+              </a>
+            )}
+
             <button onClick={() => setActiveProject(null)}>Close</button>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

@@ -5,13 +5,13 @@ import { Link as AnchorLink } from "react-scroll";
 
 const Hero = () => {
   const openResume = () => {
-    window.open(`${import.meta.env.BASE_URL}abinesh-resume.pdf`, "_blank");
+    window.open(`${import.meta.env.BASE_URL}ABINESH_RESUME(updated).pdf`, "_blank");
   };
   
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = `${import.meta.env.BASE_URL}abinesh-resume.pdf`;
-    link.download = "abinesh-resume.pdf";
+    link.href = `${import.meta.env.BASE_URL}ABINESH_RESUME(updated).pdf`;
+    link.download = "ABINESH_RESUME(updated).pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
